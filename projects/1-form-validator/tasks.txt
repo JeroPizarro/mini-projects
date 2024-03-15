@@ -1,0 +1,22 @@
+1- Create html form
+  x- html elements: 
+    title
+    username: label, input
+    password: label, input
+    confirm: label, input
+    button submit
+  x- use semantic tags
+  add eye icon
+
+2- add styles
+  x- use sass
+  responsive first 
+  utility classes
+  component oriented 
+
+3- add interaction
+  error handling
+  custom field validation: email form, password lenght
+  password hide&seek
+  submit animation
+  

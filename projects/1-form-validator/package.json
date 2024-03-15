@@ -1,0 +1,14 @@
+{
+  "name": "form-validator",
+  "version": "1.0.0",
+  "description": "Form with validation.",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss:css/styles.css"
+  },
+  "author": "Jeronimo Pizarro",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.72.0"
+  }
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Utilities
+.flex-center-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+
+  &-center {
+    align-items: center;
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-family: 'Open Sans', Geneva, Tahoma, sans-serif;
+  //line-height?
+  height: 100vh;
+  padding: 1rem;
+}
+
+main {
+  justify-content: space-around;
+  background-color: lightgrey;
+  min-height: 60vh;
+  padding: 2rem;
+  width: 100%;
+
+  .logo {
+    font-size: 48px;
+  }
+
+  #main-form {
+    background-color: red;
+    width: 100%;
+    font-size: 18px;
+
+    .form-control {
+      gap: 0.6rem;
+      margin-bottom: 1.2rem;
+
+      &:last-child {
+        margin-bottom: 1.8rem;
+      }
+
+      input {
+        height: 1.2rem;
+        border: 1px solid;
+      }
+
+    }
+
+    .form-password {
+      background-color: red;
+      input {
+        flex-grow: 2;
+        border-right: none;
+      }
+
+      button {
+        border: 1px solid;
+        border-left: none;
+        background-color: white;
+        display: inline;
+
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+
+    .btn-submit {
+      height: 2.4rem;
+      border: none;
+    }
+  }
+}

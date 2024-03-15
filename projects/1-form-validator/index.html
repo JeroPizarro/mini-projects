@@ -3,40 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Form Validator</title>
   </head>
-  <body class="center-body">
-    <div class="container">
-      <form id="form" class="form">
-        <h2>Register with us</h2>
-        <!-- username -->
-        <div class="form-control">
+  <body class="flex-center-center">
+    <main class="flex-column-center">
+      <span class="material-symbols-outlined logo"> verified </span>
+      <h1>Register with Us</h1>
+      <form id="main-form flex-column">
+        <div class="form-control flex-column">
           <label for="username">Username</label>
-          <input type="text" name="username" id="username" />
-          <small>Error msg</small>
+          <input type="text" name="username" id="username" autocomplete="off" />
         </div>
-        <!-- email -->
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
-          <small>Error msg</small>
-        </div>
-        <!-- password -->
         <div class="form-control">
           <label for="password">Password</label>
-          <input type="text" name="password" id="password" />
-          <small>Error msg</small>
+          <div class="form-password flex-row">
+            <input type="text" name="password" id="password" />
+            <button>
+              <span class="material-symbols-outlined show">
+                visibility_off
+              </span>
+              <span class="material-symbols-outlined hide"> visibility </span>
+            </button>
+          </div>
         </div>
-        <!-- confirm-password -->
+
         <div class="form-control">
-          <label for="password2">Confirm your password</label>
-          <input type="text" name="password2" id="password2" />
-          <small>Error msg</small>
+          <label for="confirm">Confirm password</label>
+          <div class="form-password flex-row">
+            <input type="text" name="confirm" id="confirm" />
+            <button>
+              <span class="material-symbols-outlined show">
+                visibility_off
+              </span>
+              <span class="material-symbols-outlined hide"> visibility </span>
+            </button>
+          </div>
         </div>
-        <input type="submit" class="btn" value="Submit!" />
+        <input
+          type="submit"
+          value="Submit"
+          id="btn-submit"
+          class="btn-submit"
+        />
       </form>
-    </div>
-    <script src="script.js"></script>
+    </main>
   </body>
 </html>
